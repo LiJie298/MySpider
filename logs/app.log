@@ -1,0 +1,26 @@
+2017-08-02 at 11:25:46 CST INFO  com.lijie.main.Start 12 main - log: info
+2017-08-02 at 11:25:46 CST DEBUG com.lijie.main.Start 13 main - log: debug
+2017-08-02 at 11:25:46 CST ERROR com.lijie.main.Start 14 main - log: error
+2017-08-02 at 15:54:14 CST INFO  com.lijie.main.Start 29 lambda$main$0 - 出现错误！！
+2017-08-02 at 15:55:43 CST INFO  com.lijie.main.Start 29 lambda$main$0 - 出现错误！！null
+2017-08-02 at 15:56:42 CST INFO  com.lijie.main.Start 29 lambda$main$0 - 出现错误！！null
+2017-08-02 at 15:58:20 CST INFO  com.lijie.main.Start 29 lambda$main$0 - 出现错误！！null
+2017-08-02 at 16:00:35 CST INFO  com.lijie.main.Start 27 lambda$main$0 - 访问成功！！
+2017-08-02 at 16:01:03 CST INFO  com.lijie.main.Start 27 lambda$main$0 - 访问成功！！OK
+2017-08-02 at 16:04:35 CST INFO  com.lijie.main.Start 29 lambda$main$0 - 访问成功！！200
+2017-08-02 at 17:32:03 CST INFO  com.lijie.main.Start 32 lambda$main$0 - 访问成功！！200
+2017-08-02 at 17:32:54 CST INFO  com.lijie.main.Start -1 lambda$main$0 - 访问成功！！200
+2017-08-02 at 17:33:01 CST INFO  com.lijie.main.Start 32 lambda$main$0 - 访问成功！！200
+2017-08-03 at 15:27:28 CST INFO  com.lijie.main.Start 40 lambda$main$0 - 访问成功！！200
+2017-08-03 at 15:51:59 CST INFO  com.lijie.main.Start 45 lambda$main$0 - 访问成功！！200
+2017-08-03 at 15:52:26 CST INFO  com.lijie.main.Start 45 lambda$main$0 - 访问成功！！200
+2017-08-03 at 15:54:14 CST INFO  com.lijie.main.Start 44 lambda$main$0 - 访问成功！！200
+2017-08-03 at 15:55:41 CST INFO  com.lijie.main.Start 45 lambda$main$0 - 访问成功！！200
+2017-08-03 at 15:56:11 CST INFO  com.lijie.main.Start 45 lambda$main$0 - 访问成功！！200
+2017-08-03 at 16:08:00 CST INFO  com.lijie.main.Start 47 lambda$main$0 - 访问成功！！200
+2017-08-03 at 16:18:00 CST INFO  com.lijie.main.Start 45 lambda$main$0 - 访问成功！！200
+2017-08-03 at 16:48:37 CST INFO  com.lijie.main.Start 47 lambda$main$0 - 出现错误！！null
+2017-08-03 at 16:49:01 CST INFO  com.lijie.main.Start 47 lambda$main$0 - 出现错误！！null
+2017-08-03 at 16:49:28 CST INFO  com.lijie.main.Start 47 lambda$main$0 - 出现错误！！null
+2017-08-03 at 16:50:28 CST INFO  com.lijie.main.Start 47 lambda$main$0 - 出现错误！！io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/127.0.0.1:80
+2017-08-03 at 16:52:02 CST INFO  com.lijie.main.Start 47 lambda$main$0 - 出现错误！！io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/127.0.0.1:80
