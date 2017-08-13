@@ -1,43 +1,44 @@
 package com.lijie.download.Impl;
 
-import com.lijie.download.Download;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
-
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+import us.codecraft.webmagic.Page;
+import us.codecraft.webmagic.Request;
+import us.codecraft.webmagic.Site;
+import us.codecraft.webmagic.Task;
+import us.codecraft.webmagic.downloader.AbstractDownloader;
+import us.codecraft.webmagic.downloader.HttpClientGenerator;
 
 /**
  * Created by lijie7 on 2017/8/2.
  */
-public class DownloadHtmlImpl implements Download {
+public class DownloadHtmlImpl extends AbstractDownloader {
     private Logger log = LogManager.getLogger(DownloadHtmlImpl.class.getName());
-    private int threadNumber ;
-    private ExecutorService threadService ;
+    private HttpClientGenerator httpClientGenerator = new HttpClientGenerator();
+    private int threadNum;
 
-
-    public synchronized String getStartDownload(String url){
-        log.info("DownLoading : "+url);
-        String html = "";
-
-        return html;
+    public DownloadHtmlImpl(int threadNum) {
+        this.threadNum = threadNum;
     }
 
-    @Override
-    public void setThreadNum(int num ){
-        if(num>0){
-            this.threadNumber = num;
-            this.threadService = Executors.newFixedThreadPool(num);
-            log.info("threadPool has created");
-            for(int i = 0;i<num;i++){
-
-            }
+    public Page download(Request request, Task task) {
+        Site site = null;
+        if(task != null) {
+            site = task.getSite();
         }
-
+        return this.addToCycleRetry(request,site);
     }
 
-    @Override
-    public void run() {
-//        getStartDownload();
+    public void setThread(int threadNum) {
+        this.httpClientGenerator.setPoolSize(getThreadNum());
     }
+
+    public int getThreadNum() {
+        return threadNum;
+    }
+
+    public void setThreadNum(int threadNum) {
+        this.threadNum = threadNum;
+    }
+
 }

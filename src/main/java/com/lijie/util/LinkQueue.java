@@ -1,10 +1,10 @@
 package com.lijie.util;
 
 import java.util.HashSet;
-import java.util.Queue;
 import java.util.Set;
 
 /**
+ * 用于存储目前网页的所有连接
  * Created by lijie7 on 2017/8/3.
  */
 public class LinkQueue {
@@ -14,6 +14,9 @@ public class LinkQueue {
     public static  WorkQueue getUnVisitedUrl(){
         return unVisitedUrl;
     }
+
+
+
     //添加访问过的url到visitedUrl
     public static void addVisitedUrl(String url){
         visitedUrl.add(url);
@@ -32,6 +35,10 @@ public class LinkQueue {
     //获取已经访问过的url数量
     public static int getVisitedUrlNum(){
         return visitedUrl.size();
+    }
+
+    public static int getUnVisitUrlNum(){
+        return unVisitedUrl.getQueueNum();
     }
     //判断问访问的URL队列是否为空
     public static boolean unVisitedUrlEmpty(){
